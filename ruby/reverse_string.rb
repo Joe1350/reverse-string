@@ -1,5 +1,15 @@
 def reverse_string(str)
   # type your code in here
+  string = str.split('')
+  reversed_string = []
+
+  string.each do |char|
+    reversed_string.unshift char
+  end
+
+  reversed_string.join('')
+
+  # str.reverse
 end
 
 if __FILE__ == $PROGRAM_NAME
